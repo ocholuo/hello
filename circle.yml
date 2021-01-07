@@ -1,11 +1,6 @@
 version: 2.1
-
-jobs:
-  testsone:
-    Steps:
-      - run: ./node_modules/.bin/mocha
-
+ 
 workflows:
   node-tests:
     jobs:
-      - testsone
+      - ./node_modules/.bin/mocha
