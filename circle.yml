@@ -8,4 +8,4 @@ jobs:
 workflows:
   node-tests:
     jobs:
-      - testone
+      - testsone
