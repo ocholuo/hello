@@ -1,7 +1,11 @@
 version: 2.1
+
 jobs:
-  node: circleci/node@3.0.0
+  testsone:
+    Steps:
+      - run: ./node_modules/.bin/mocha
+
 workflows:
   node-tests:
     jobs:
-      - ./node_modules/.bin/mocha
+      - testone
