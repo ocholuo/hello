@@ -1,8 +1,8 @@
-machine:
-  node:
-    version: 0.10
-
-test:
-  override:
-    - node/test
-    - ./node_modules/.bin/mocha
+version: 2.1
+orbs:
+  node: circleci/node@3.0.0
+workflows:
+  node-tests:
+    jobs:
+      - node/test
+      - ./node_modules/.bin/mocha
