@@ -5,4 +5,6 @@ workflows:
   node-tests:
     jobs:
       - node/circle
-        - run: echo "this is the build job"
+        steps:
+            - checkout
+            - run: echo "this is the build job"
