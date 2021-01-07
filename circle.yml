@@ -1,3 +1,6 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.1.0
 jobs:
   test:
     executor:
@@ -10,9 +13,6 @@ jobs:
           # command: npm run test
           # command: npm start
           command: ./node_modules/.bin/mocha
-orbs:
-  node: circleci/node@4.1.0
-version: 2.1
 workflows:
   test_my_app:
     jobs:
