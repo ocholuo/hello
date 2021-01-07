@@ -1,6 +1,8 @@
-version: 2.1
+# circle.yml
+machine:
+  node:
+    version: 0.10
 
-workflows:
-  node-tests:
-    jobs:
-      - node_modules/.bin/mocha
+test:
+  override:
+    - ./node_modules/.bin/mocha
