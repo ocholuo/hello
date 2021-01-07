@@ -1,6 +1,6 @@
 version: 2.1
- 
+
 workflows:
   node-tests:
     jobs:
-      - ./node_modules/.bin/mocha
+      - node_modules/.bin/mocha
